@@ -3,8 +3,8 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Zeeshan Ali — Digital Twin & Systems Engineering Researcher</title>
-<meta name="description" content="Zeeshan Ali — Ph.D. researcher in Digital Twin Engineering, systems modeling & simulation, based in Bordeaux, France.">
+<title>Zeeshan ALI (PhD, PMP) — Digital Twin & Systems Engineering Researcher</title>
+<meta name="description" content="Zeeshan ALI (PhD, PMP) — Researcher in Digital Twin Engineering, systems modeling & simulation, based in Bordeaux, France.">
 <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🧩</text></svg>">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -87,7 +87,7 @@
   }
   .eyebrow::before{content:""; width:20px; height:2px; background:var(--primary); border-radius:2px;}
   h2.section-title{font-size:clamp(24px,3.4vw,34px); font-weight:800; margin-bottom:8px;}
-  .section-sub{color:var(--text-muted); font-size:16px; max-width:560px; margin-bottom:44px;}
+  .section-sub{color:var(--text-muted); font-size:16px; max-width:620px; margin-bottom:44px;}
 
   /* ---------- Nav ---------- */
   header{
@@ -107,10 +107,10 @@
     display:flex; align-items:center; justify-content:center;
     color:#fff; font-weight:800; font-size:15px;
   }
-  nav.links{display:flex; gap:4px; align-items:center;}
+  nav.links{display:flex; gap:2px; align-items:center;}
   nav.links a{
-    padding:9px 14px; border-radius:999px; font-size:14.5px; font-weight:500;
-    color:var(--text-muted); transition:.15s ease;
+    padding:9px 12px; border-radius:999px; font-size:14px; font-weight:500;
+    color:var(--text-muted); transition:.15s ease; white-space:nowrap;
   }
   nav.links a:hover, nav.links a.active{color:var(--text); background:var(--bg-soft);}
   .nav-right{display:flex; align-items:center; gap:10px;}
@@ -147,12 +147,12 @@
     font-size:13.5px; font-weight:600; margin-bottom:20px;
   }
   .hero-tag .dot{width:7px; height:7px; border-radius:50%; background:var(--accent);}
-  h1.hero-title{font-size:clamp(34px,5vw,54px); font-weight:800; line-height:1.08;}
+  h1.hero-title{font-size:clamp(30px,4.6vw,50px); font-weight:800; line-height:1.1;}
   h1.hero-title .grad{
     background:linear-gradient(90deg,var(--primary),var(--accent));
     -webkit-background-clip:text; background-clip:text; color:transparent;
   }
-  .hero-desc{margin-top:20px; font-size:17.5px; color:var(--text-muted); max-width:560px;}
+  .hero-desc{margin-top:20px; font-size:17.5px; color:var(--text-muted); max-width:580px;}
   .hero-actions{display:flex; gap:12px; margin-top:32px; flex-wrap:wrap;}
   .hero-stats{display:flex; gap:28px; margin-top:44px; flex-wrap:wrap;}
   .stat b{display:block; font-size:24px; font-weight:800; font-family:'Plus Jakarta Sans',sans-serif;}
@@ -210,7 +210,7 @@
   .fact-card h4{font-size:14px; font-weight:700;}
   .fact-card p{font-size:13.5px; color:var(--text-muted); margin-top:2px;}
 
-  /* ---------- Experience timeline ---------- */
+  /* ---------- Timeline (experience / academic) ---------- */
   .timeline{position:relative; padding-left:32px;}
   .timeline::before{content:""; position:absolute; left:6px; top:6px; bottom:6px; width:2px; background:var(--border);}
   .tl-item{position:relative; padding-bottom:40px;}
@@ -222,7 +222,13 @@
   .tl-card{padding:24px 26px;}
   .tl-head{display:flex; justify-content:space-between; align-items:flex-start; gap:16px; flex-wrap:wrap; margin-bottom:6px;}
   .tl-role{font-size:18px; font-weight:700;}
-  .tl-org{color:var(--primary); font-weight:600; font-size:14.5px; margin-top:2px;}
+  .tl-org-row{display:flex; align-items:center; gap:8px; margin-top:4px;}
+  .org-badge{
+    width:24px; height:24px; border-radius:7px; flex-shrink:0;
+    background:linear-gradient(135deg,var(--primary),var(--accent)); color:#fff;
+    display:flex; align-items:center; justify-content:center; font-size:9.5px; font-weight:800;
+  }
+  .tl-org{color:var(--primary); font-weight:600; font-size:14.5px;}
   .tl-date{
     font-size:12.5px; font-weight:600; color:var(--text-muted); background:var(--bg-soft);
     padding:6px 12px; border-radius:999px; white-space:nowrap;
@@ -230,11 +236,15 @@
   .tl-list{margin-top:14px; display:grid; grid-template-columns:1fr 1fr; gap:8px 20px;}
   .tl-list li{font-size:14.5px; color:var(--text-muted); position:relative; padding-left:16px;}
   .tl-list li::before{content:"›"; position:absolute; left:0; color:var(--accent); font-weight:700;}
+  .simple-list{display:flex; flex-direction:column; gap:8px; margin-top:10px;}
+  .simple-list li{font-size:14px; color:var(--text-muted); position:relative; padding-left:16px;}
+  .simple-list li::before{content:"›"; position:absolute; left:0; color:var(--accent); font-weight:700;}
   .tl-project{
     margin-top:16px; padding:12px 16px; border-radius:var(--radius-sm); background:var(--accent-soft);
     font-size:13.5px; color:var(--text);
   }
   .tl-project b{color:var(--accent);}
+  .tl-sub{font-size:13.5px; font-weight:700; color:var(--text); margin-top:18px; margin-bottom:6px;}
 
   /* ---------- Education ---------- */
   .edu-grid{display:grid; grid-template-columns:repeat(3,1fr); gap:22px;}
@@ -249,28 +259,28 @@
   .edu-desc{font-size:13.5px; color:var(--text-muted); margin-top:4px;}
 
   /* ---------- Skills ---------- */
-  .skills-grid{display:grid; grid-template-columns:1fr 1fr; gap:22px;}
-  .skill-card{padding:26px;}
-  .skill-card h3{font-size:15px; margin-bottom:16px; display:flex; align-items:center; gap:10px;}
+  .skills-grid{display:grid; grid-template-columns:1fr 1fr 1fr; gap:20px;}
+  .skill-card{padding:24px;}
+  .skill-card h3{font-size:14.5px; margin-bottom:14px; display:flex; align-items:center; gap:10px;}
   .skill-card h3 .ic{
     width:32px; height:32px; border-radius:9px; background:var(--primary-soft); color:var(--primary);
-    display:flex; align-items:center; justify-content:center;
+    display:flex; align-items:center; justify-content:center; flex-shrink:0;
   }
   .skill-card h3 .ic svg{width:16px; height:16px;}
 
   /* ---------- Certifications ---------- */
-  .cert-grid{display:grid; grid-template-columns:repeat(3,1fr); gap:16px;}
+  .cert-grid{display:grid; grid-template-columns:repeat(4,1fr); gap:16px;}
   .cert-card{padding:18px 20px; display:flex; gap:12px; align-items:center;}
   .cert-card .ic{
     width:36px; height:36px; border-radius:10px; background:var(--accent-soft); color:var(--accent);
     display:flex; align-items:center; justify-content:center; flex-shrink:0;
   }
   .cert-card .ic svg{width:17px; height:17px;}
-  .cert-card b{font-size:13.5px; display:block;}
-  .cert-card span{font-size:12px; color:var(--text-muted);}
+  .cert-card b{font-size:13px; display:block;}
+  .cert-card span{font-size:11.5px; color:var(--text-muted);}
 
   /* ---------- Publications ---------- */
-  .pub-stats{display:grid; grid-template-columns:repeat(4,1fr); gap:16px; margin-bottom:36px;}
+  .pub-stats{display:grid; grid-template-columns:repeat(5,1fr); gap:16px; margin-bottom:36px;}
   .pub-stat{padding:20px; text-align:center;}
   .pub-stat b{display:block; font-size:28px; font-weight:800; font-family:'Plus Jakarta Sans',sans-serif; color:var(--primary);}
   .pub-stat span{font-size:12.5px; color:var(--text-muted);}
@@ -309,6 +319,43 @@
     :root:not([data-theme="light"]) .badge-review{background:rgba(245,158,11,.15); color:#fbbf24;}
   }
 
+  /* ---------- Teaching table ---------- */
+  .table-wrap{overflow-x:auto; border:1px solid var(--border); border-radius:var(--radius-md); background:var(--bg-elevated);}
+  .data-table{width:100%; border-collapse:collapse; font-size:13px; min-width:640px;}
+  .data-table th, .data-table td{padding:12px 14px; border-bottom:1px solid var(--border); text-align:left; white-space:nowrap;}
+  .data-table th{font-size:11px; text-transform:uppercase; letter-spacing:.04em; color:var(--text-muted); font-weight:700;}
+  .data-table tr:last-child td{border-bottom:none; font-weight:700;}
+  .data-table td.wrap-cell{white-space:normal;}
+
+  /* ---------- Workshops / seminars ---------- */
+  .ws-list{display:flex; flex-direction:column; gap:12px;}
+  .ws-card{padding:18px 22px; display:flex; gap:16px; align-items:flex-start;}
+  .ws-date{font-size:11.5px; font-weight:700; color:var(--accent); background:var(--accent-soft); padding:5px 11px; border-radius:999px; white-space:nowrap; flex-shrink:0;}
+  .ws-title{font-size:14.5px; font-weight:700;}
+  .ws-venue{font-size:13px; color:var(--text-muted); margin-top:4px;}
+
+  /* ---------- Societies / funding ---------- */
+  .fund-list{display:flex; flex-direction:column; gap:14px;}
+  .fund-card{padding:20px 22px;}
+  .fund-head{display:flex; justify-content:space-between; gap:12px; flex-wrap:wrap; align-items:flex-start;}
+  .fund-role{font-weight:700; font-size:15px;}
+  .fund-org{color:var(--primary); font-weight:600; font-size:13.5px; margin-top:2px;}
+  .fund-date{font-size:12px; font-weight:600; color:var(--text-muted); background:var(--bg-soft); padding:5px 11px; border-radius:999px; white-space:nowrap;}
+  .fund-desc{font-size:13.5px; color:var(--text-muted); margin-top:8px;}
+
+  /* ---------- References ---------- */
+  .ref-grid{display:grid; grid-template-columns:repeat(3,1fr); gap:18px;}
+  .ref-card{padding:24px; text-align:center;}
+  .ref-card .avatar{
+    width:46px; height:46px; border-radius:50%; margin:0 auto 12px;
+    background:var(--primary-soft); color:var(--primary); font-weight:800; font-size:15px;
+    display:flex; align-items:center; justify-content:center;
+  }
+  .ref-card h4{font-size:14.5px;}
+  .ref-card .role{font-size:12.5px; color:var(--primary); font-weight:600; margin-top:3px;}
+  .ref-card .org{font-size:12px; color:var(--text-muted); margin-top:2px;}
+  .ref-note{text-align:center; margin-top:18px; font-size:13px; color:var(--text-muted);}
+
   /* ---------- Contact ---------- */
   .contact-card{
     padding:52px; text-align:center; background:linear-gradient(135deg,var(--primary),var(--accent));
@@ -324,6 +371,7 @@
   .contact-links{display:flex; gap:22px; justify-content:center; margin-top:26px; flex-wrap:wrap; font-size:13.5px;}
   .contact-links a{display:flex; align-items:center; gap:7px; color:rgba(255,255,255,.9);}
   .contact-links svg{width:15px; height:15px;}
+  .contact-emails{display:flex; gap:16px; justify-content:center; margin-top:14px; flex-wrap:wrap; font-size:12.5px; color:rgba(255,255,255,.75);}
 
   footer{padding:32px 24px; text-align:center; color:var(--text-muted); font-size:13px;}
   footer a{color:var(--primary); font-weight:600;}
@@ -343,10 +391,12 @@
     .hero-grid{grid-template-columns:1fr; text-align:center;}
     .hero-photo-wrap{order:-1;}
     .hero-actions, .hero-stats{justify-content:center;}
+    .tl-org-row{justify-content:center;}
     .about-grid, .skills-grid{grid-template-columns:1fr;}
     .edu-grid{grid-template-columns:1fr;}
     .cert-grid{grid-template-columns:1fr 1fr;}
     .pub-stats{grid-template-columns:1fr 1fr;}
+    .ref-grid{grid-template-columns:1fr;}
     .tl-list{grid-template-columns:1fr;}
     nav.links{
       position:fixed; inset:60px 16px auto 16px; flex-direction:column; align-items:stretch;
@@ -370,11 +420,12 @@
   <div class="nav">
     <a href="#top" class="brand">
       <span class="brand-badge">ZA</span>
-      Zeeshan Ali
+      Zeeshan ALI
     </a>
     <nav class="links" id="navLinks">
       <a href="#about">About</a>
       <a href="#experience">Experience</a>
+      <a href="#academic">Academic</a>
       <a href="#education">Education</a>
       <a href="#skills">Skills</a>
       <a href="#publications">Publications</a>
@@ -400,9 +451,9 @@
       <div>
         <div class="hero-tag"><span class="dot"></span> Available for research & engineering collaborations</div>
         <h1 class="hero-title">Zeeshan ALI (PhD, PMP)<br><span class="grad">Digital Twin & Systems Engineer</span></h1>
-        <p class="hero-desc">Ph.D. researcher building urban digital twins at the University of Bordeaux. I work across modeling & simulation, complex systems engineering, and software development — turning messy real-world systems into models people can actually use.</p>
+        <p class="hero-desc">A sociable, dynamic and rigorous professional with hands-on industry experience and academic training across engineering and computer science. I research and build urban digital twins at IMS Lab (CNRS, University of Bordeaux) — working across modeling & simulation, complex systems engineering, and enterprise interoperability.</p>
         <div class="hero-actions">
-          <a href="mailto:zeeshan.ub@gmail.com" class="btn btn-primary">
+          <a href="mailto:zeeshanali0001@gmail.com" class="btn btn-primary">
             <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="m2 7 10 6 10-6"/></svg>
             Get in Touch
           </a>
@@ -414,8 +465,8 @@
         </div>
         <div class="hero-stats">
           <div class="stat"><b>10+ yrs</b><span>Research & industry</span></div>
-          <div class="stat"><b>10</b><span>Publications</span></div>
-          <div class="stat"><b>5</b><span>Countries worked in</span></div>
+          <div class="stat"><b>13</b><span>Publications</span></div>
+          <div class="stat"><b>4</b><span>Countries worked in</span></div>
           <div class="stat"><b>Ph.D.</b><span>Digital Twin Engineering</span></div>
         </div>
       </div>
@@ -437,22 +488,22 @@
       <p class="section-sub reveal">The short version of a long, cross-country journey through engineering, IT and research.</p>
       <div class="about-grid">
         <div class="about-text reveal">
-          <p>I'm a sociable, dynamic and detail-oriented engineer with professional experience and academic training spanning engineering and computer science. My work today focuses on <strong>urban digital twins</strong> — building the systems-engineering foundations that let cities model, simulate and understand themselves.</p>
-          <p>Before research, I spent several years in industry across IT project management, ERP systems, production & quality engineering, and mechanical operations — experience that now shapes how I think about complex, real-world systems rather than just theoretical ones.</p>
-          <p>Outside of my thesis work, I've co-authored journal papers, conference papers and book chapters on digital twin engineering, model-driven approaches, and human-centered digital twins with the IMS Lab at the University of Bordeaux.</p>
+          <p>I'm a sociable, dynamic and rigorous professional with hands-on experience and academic training spanning engineering and computer science. My work today focuses on <strong>urban digital twins</strong> — building the systems-engineering foundations that let cities model, simulate and understand themselves, as a researcher at IMS Lab (CNRS, University of Bordeaux).</p>
+          <p>Before research, I spent several years in industry across IT project management, ERP systems, production & quality engineering, and mechanical operations across Pakistan, the UAE and Luxembourg — experience that now shapes how I think about complex, real-world systems rather than just theoretical ones. I'm also a certified <strong>PMP</strong> (Project Management Professional).</p>
+          <p>Alongside my research, I lecture on the Master in Enterprise Engineering at the University of Bordeaux, supervise bachelor's and master's internships and projects, and review papers and book chapters for journals and conferences in modeling & simulation and digital twins.</p>
         </div>
         <div class="facts">
           <div class="fact-card">
             <div class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M12 21s-7-5.33-7-11a7 7 0 0 1 14 0c0 5.67-7 11-7 11Z"/><circle cx="12" cy="10" r="2.5"/></svg></div>
-            <div><h4>Location</h4><p>Bordeaux, France</p></div>
+            <div><h4>Location</h4><p>Pessac, Bordeaux, France</p></div>
           </div>
           <div class="fact-card">
             <div class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M4 5h16M4 12h16M4 19h10"/></svg></div>
-            <div><h4>Languages</h4><p>English & French (Advanced) · Urdu & Punjabi (Native)</p></div>
+            <div><h4>Languages</h4><p>English (C1) & French (B2) · Urdu & Punjabi (Native)</p></div>
           </div>
           <div class="fact-card">
             <div class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M22 12h-4l-3 9L9 3l-3 9H2"/></svg></div>
-            <div><h4>Focus areas</h4><p>Digital twins · Modeling & simulation · Systems engineering</p></div>
+            <div><h4>Focus areas</h4><p>Digital twins · Modeling & simulation · Systems engineering · MBSE</p></div>
           </div>
           <div class="fact-card">
             <div class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><rect x="3" y="4" width="18" height="18" rx="2"/><path d="M16 2v4M8 2v4M3 10h18"/></svg></div>
@@ -463,12 +514,12 @@
     </div>
   </section>
 
-  <!-- EXPERIENCE -->
+  <!-- PROFESSIONAL EXPERIENCE -->
   <section id="experience" style="background:var(--bg-soft)">
     <div class="wrap">
       <div class="eyebrow">Career</div>
       <h2 class="section-title reveal">Professional experience</h2>
-      <p class="section-sub reveal">From factory floors to digital twin labs — five roles, three continents.</p>
+      <p class="section-sub reveal">From factory floors to digital twin labs — six roles across four countries.</p>
 
       <div class="timeline">
 
@@ -476,16 +527,19 @@
           <div class="tl-dot"></div>
           <div class="tl-card card">
             <div class="tl-head">
-              <div><div class="tl-role">Researcher — Urban Digital Twins</div><div class="tl-org">IMS Lab, Université de Bordeaux</div></div>
-              <div class="tl-date">Dec 2022 — Present</div>
+              <div>
+                <div class="tl-role">Researcher — Digital Twin Engineering</div>
+                <div class="tl-org-row"><span class="org-badge">UB</span><div class="tl-org">IMS Lab, CNRS, University of Bordeaux, France</div></div>
+              </div>
+              <div class="tl-date">Sep 2022 — Present</div>
             </div>
             <ul class="tl-list">
               <li>Modeling & simulation (M&S)</li>
               <li>Digital twin engineering</li>
               <li>Complex systems engineering</li>
-              <li>Systems theory & systems modeling</li>
+              <li>Systems theory applied to large-scale systems</li>
             </ul>
-            <div class="tl-project"><b>Project:</b> Building the urban digital twin of the University of Bordeaux.</div>
+            <div class="tl-project"><b>Projects:</b> 1) Development of the University of Bordeaux Urban Digital Twin (UBUDT). 2) Open-source code repository for the digital twin architecture implementation.</div>
           </div>
         </div>
 
@@ -493,17 +547,21 @@
           <div class="tl-dot"></div>
           <div class="tl-card card">
             <div class="tl-head">
-              <div><div class="tl-role">Project Manager & Service Coordinator</div><div class="tl-org">EUT Global</div></div>
-              <div class="tl-date">Jan 2021 — Nov 2022</div>
+              <div>
+                <div class="tl-role">Project Manager & Service Coordinator (Intern)</div>
+                <div class="tl-org-row"><span class="org-badge">EUT</span><div class="tl-org">EUT Global</div></div>
+              </div>
+              <div class="tl-date">Mar 2022 — Aug 2022</div>
             </div>
             <ul class="tl-list">
               <li>IT project management</li>
               <li>Change management</li>
-              <li>Project outsourcing</li>
               <li>Identifying client needs & requirements</li>
               <li>Preparing SLAs & PLAs</li>
-              <li>Overseeing every project phase</li>
+              <li>Project outsourcing</li>
+              <li>Overseeing every project delivery stage</li>
             </ul>
+            <div class="tl-project"><b>Project:</b> Successfully delivered several IT projects to clients worldwide.</div>
           </div>
         </div>
 
@@ -511,8 +569,11 @@
           <div class="tl-dot"></div>
           <div class="tl-card card">
             <div class="tl-head">
-              <div><div class="tl-role">Project Engineer Intern — GTRS, CLT-UFA</div><div class="tl-org">RTL Group, Luxembourg</div></div>
-              <div class="tl-date">Feb 2020 — Oct 2020</div>
+              <div>
+                <div class="tl-role">Project Engineer (Intern) — GTRS, CLT-UFA</div>
+                <div class="tl-org-row"><span class="org-badge">RTL</span><div class="tl-org">RTL Group, Luxembourg</div></div>
+              </div>
+              <div class="tl-date">Mar 2020 — Aug 2020</div>
             </div>
             <ul class="tl-list">
               <li>ERP data analysis (SAP, BOFC & other apps)</li>
@@ -520,7 +581,7 @@
               <li>Process modeling & documentation</li>
               <li>Audit reports, SLAs, PLAs & GTRS prep</li>
             </ul>
-            <div class="tl-project"><b>Projects:</b> Internal audit (S1 2020) · RIGA Phase I & II.</div>
+            <div class="tl-project"><b>Projects:</b> Internal audit of CLT-UFA (S1 2020) · RIGA Phase I & II.</div>
           </div>
         </div>
 
@@ -528,16 +589,19 @@
           <div class="tl-dot"></div>
           <div class="tl-card card">
             <div class="tl-head">
-              <div><div class="tl-role">Mechanical Management Assistant</div><div class="tl-org">SEDCO, United Arab Emirates</div></div>
-              <div class="tl-date">Aug 2017 — Jun 2018</div>
+              <div>
+                <div class="tl-role">Assistant Manager</div>
+                <div class="tl-org-row"><span class="org-badge">AA</span><div class="tl-org">AA'LA Solutions (Client: SEDCO), UAE</div></div>
+              </div>
+              <div class="tl-date">Aug 2017 — May 2018</div>
             </div>
             <ul class="tl-list">
-              <li>ISO standards & KPI implementation</li>
-              <li>Continuous improvement</li>
-              <li>Preventive maintenance & ERP</li>
-              <li>Production analysis & planning</li>
+              <li>ISO standards & KPI implementation in the ERP system</li>
+              <li>Continuous improvement initiatives</li>
+              <li>ERP-based production analysis & planning</li>
+              <li>Resource planning</li>
             </ul>
-            <div class="tl-project"><b>Projects:</b> Annual maintenance (SH18) · delivered HSE training.</div>
+            <div class="tl-project"><b>Projects:</b> Annual maintenance (SH18) · delivered ERP trainings.</div>
           </div>
         </div>
 
@@ -545,16 +609,115 @@
           <div class="tl-dot"></div>
           <div class="tl-card card">
             <div class="tl-head">
-              <div><div class="tl-role">Assistant Project Manager — Production & Quality</div><div class="tl-org">HAIER Group, Pakistan</div></div>
+              <div>
+                <div class="tl-role">Assistant Project Manager</div>
+                <div class="tl-org-row"><span class="org-badge">HG</span><div class="tl-org">HAIER Group, Pakistan</div></div>
+              </div>
               <div class="tl-date">Aug 2016 — Jul 2017</div>
             </div>
             <ul class="tl-list">
               <li>Production forecasting & variance analysis</li>
-              <li>Quality control (QA/QC)</li>
-              <li>MRP-II & resource planning</li>
-              <li>Capacity & production planning</li>
+              <li>Quality control (QA/QC) & audit documentation</li>
+              <li>MRP-II methods for resource & capacity planning</li>
+              <li>Production planning</li>
             </ul>
-            <div class="tl-project"><b>Project:</b> Designed & manufactured an annealing and quenching furnace.</div>
+            <div class="tl-project"><b>Project:</b> Designed & developed an annealing and quenching furnace (600°C operational temperature), replacing the old furnace.</div>
+          </div>
+        </div>
+
+        <div class="tl-item reveal">
+          <div class="tl-dot"></div>
+          <div class="tl-card card">
+            <div class="tl-head">
+              <div>
+                <div class="tl-role">Internship — Product Quality</div>
+                <div class="tl-org-row"><span class="org-badge">SI</span><div class="tl-org">Service Industries Limited, Pakistan</div></div>
+              </div>
+              <div class="tl-date">Jul 2014 — Sep 2014</div>
+            </div>
+            <ul class="tl-list">
+              <li>Tread depth testing (cracks, molds, bubbles)</li>
+              <li>Balance testing for proper spinning</li>
+              <li>X-ray testing for microstructural defects</li>
+            </ul>
+            <div class="tl-project"><b>Context:</b> Tire & tube manufacturing unit — product quality management using multiple testing techniques.</div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ACADEMIC EXPERIENCE -->
+  <section id="academic">
+    <div class="wrap">
+      <div class="eyebrow">Teaching & Supervision</div>
+      <h2 class="section-title reveal">Academic experience</h2>
+      <p class="section-sub reveal">Lecturing, supervision and peer review alongside my research at the University of Bordeaux.</p>
+
+      <div class="timeline">
+
+        <div class="tl-item reveal">
+          <div class="tl-dot"></div>
+          <div class="tl-card card">
+            <div class="tl-head">
+              <div><div class="tl-role">Lectures to the Master Program</div><div class="tl-org">Master in Enterprise Engineering, University of Bordeaux</div></div>
+              <div class="tl-date">2024 — Present</div>
+            </div>
+            <p style="font-size:14px; color:var(--text-muted); margin-top:10px;">Taught Master 2 (M2) courses combining lectures (CM), tutorials (TD) and lab sessions (TP), for a total of <strong>135.25 hours</strong> (TD-equivalent). Responsibilities: course creation, design of tutorial/lab/project and exam subjects, teaching, student supervision, examination & assessment, and course coordination.</p>
+            <div class="table-wrap" style="margin-top:16px;">
+              <table class="data-table">
+                <thead><tr><th>Academic year</th><th>Status</th><th>Course</th><th>Format</th><th>Hours (TD-eq.)</th><th>Students</th></tr></thead>
+                <tbody>
+                  <tr><td>2026–2027</td><td>Contract Lecturer</td><td class="wrap-cell">Enterprise Modeling (EMO)</td><td>CM 11h / TD 24h</td><td>40.50</td><td>16</td></tr>
+                  <tr><td>2026–2027</td><td>Contract Lecturer</td><td class="wrap-cell">Information Systems & Interoperability (ISI)</td><td>CM 1.5h / TD 11.5h / TP 12h</td><td>21.75</td><td>7</td></tr>
+                  <tr><td>2026–2027</td><td>Contract Lecturer</td><td class="wrap-cell">Performance & Continuous Improvement (PCI)</td><td>CM 6h / TD 9h</td><td>18.00</td><td>16</td></tr>
+                  <tr><td>2025–2026</td><td>Voluntary</td><td class="wrap-cell">Information Systems & Interoperability (ISI)</td><td>CM 6h / TD 14h</td><td>23.00</td><td>19</td></tr>
+                  <tr><td>2024–2025</td><td>Contract Lecturer</td><td class="wrap-cell">Performance & Continuous Improvement (PCI)</td><td>CM 6h / TD 23h</td><td>32.00</td><td>22</td></tr>
+                  <tr><td colspan="4">Total teaching load</td><td>135.25</td><td></td></tr>
+                </tbody>
+              </table>
+            </div>
+          </div>
+        </div>
+
+        <div class="tl-item reveal">
+          <div class="tl-dot"></div>
+          <div class="tl-card card">
+            <div class="tl-head">
+              <div><div class="tl-role">Internship & Project Supervision / Co-Supervision</div><div class="tl-org">Master in Enterprise Engineering, University of Bordeaux</div></div>
+              <div class="tl-date">2023 — Present</div>
+            </div>
+            <p style="font-size:14px; color:var(--text-muted); margin-top:10px;">Wrote and drafted internship subjects and proposals, interviewed and ranked candidates, recruited the most suitable ones, and supervised them throughout their internships.</p>
+
+            <div class="tl-sub">Academic year 2025–2026</div>
+            <ul class="simple-list">
+              <li>Supervised 3 master students' internships: 3D urban modeling for realistic urban infrastructure; data patrimony for the UBUDT; UDT platform development for data/model/stakeholder integration.</li>
+              <li>Co-supervised 3 bachelor students' internships: energy production modeling (System Dynamics); energy consumption modeling (Agent-Based); mobility modeling (Discrete-Event).</li>
+              <li>Supervised 2 master projects (3 students each): digital twin for a surgical robot; human-off-the-loop integration for UDTs.</li>
+            </ul>
+
+            <div class="tl-sub">Academic year 2024–2025</div>
+            <ul class="simple-list">
+              <li>Co-supervised 2 master students' internships and projects: VR integration with the UDT; Sustainable Aviation Fuel (SAF) supply chain traceability.</li>
+            </ul>
+
+            <div class="tl-sub">Academic year 2023–2024</div>
+            <ul class="simple-list">
+              <li>Co-supervised 1 master student's internship: energy consumption modeling (Agent-Based).</li>
+              <li>Co-supervised 2 bachelor projects (3 students each): road & building infrastructure integration in the UDT using a standard reference ontology.</li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="tl-item reveal">
+          <div class="tl-dot"></div>
+          <div class="tl-card card">
+            <div class="tl-head">
+              <div><div class="tl-role">Reviewer</div><div class="tl-org">Journals, conferences & book chapters</div></div>
+              <div class="tl-date">2024 — Present</div>
+            </div>
+            <p style="font-size:14px; color:var(--text-muted); margin-top:10px;">Reviewed papers and book chapters for Elsevier journals (Cities, CEUS, FGCS), the <em>Simulation</em> journal, the ANNSIM conference, and Springer book chapters.</p>
           </div>
         </div>
 
@@ -563,7 +726,7 @@
   </section>
 
   <!-- EDUCATION -->
-  <section id="education">
+  <section id="education" style="background:var(--bg-soft)">
     <div class="wrap">
       <div class="eyebrow">Academics</div>
       <h2 class="section-title reveal">Education</h2>
@@ -571,113 +734,141 @@
       <div class="edu-grid">
         <div class="edu-card card reveal">
           <div class="edu-badge">PhD</div>
-          <h3>Digital Twin Engineering</h3>
-          <div class="edu-org">IMS Lab — Université de Bordeaux, France</div>
-          <div class="edu-date">Dec 2025</div>
-          <div class="edu-desc">Thesis: <em>A Systems Engineering Approach to the Development of an Urban Digital Twin.</em></div>
+          <h3>Engineering — Digital Twins</h3>
+          <div class="edu-org">University of Bordeaux, France</div>
+          <div class="edu-date">2022 — 2025</div>
+          <div class="edu-desc">Research area: Digital Twin Engineering, Systems Engineering, MBSE, Modeling & Simulation, and System Design, with applications in the urban domain. Thesis: <em>"Systems Engineering Approach to the Development of an Urban Digital Twin."</em> Fully funded under the ANR ACT project (ANR-20-IDES-0001).</div>
         </div>
         <div class="edu-card card reveal">
           <div class="edu-badge">MSc</div>
           <h3>Complex Systems Engineering</h3>
-          <div class="edu-org">Université de Bordeaux, France</div>
-          <div class="edu-date">2020</div>
-          <div class="edu-desc">Systems theory, enterprise architecture & ontology modeling, enterprise interoperability, ERP, and production/operations/quality/logistics management.</div>
+          <div class="edu-org">University of Bordeaux, France</div>
+          <div class="edu-date">2019 — 2020</div>
+          <div class="edu-desc">Majors: Systems theory, enterprise modeling, ontology modeling, information systems & interoperability, enterprise frameworks & architectures, ERP, and production/operations/quality/logistics management.</div>
         </div>
         <div class="edu-card card reveal">
           <div class="edu-badge">BEng</div>
           <h3>Mechatronics Engineering</h3>
-          <div class="edu-org">Wah Engineering College, Pakistan</div>
-          <div class="edu-date">2016</div>
-          <div class="edu-desc">Industrial automation, instrumentation, robotics, embedded systems, and machine vision.</div>
+          <div class="edu-org">Wah Engineering College, University of Wah, Pakistan</div>
+          <div class="edu-date">2012 — 2016</div>
+          <div class="edu-desc">Majors: Industrial automation, instrumentation, robotics, embedded systems, and machine vision.</div>
         </div>
       </div>
     </div>
   </section>
 
   <!-- SKILLS -->
-  <section id="skills" style="background:var(--bg-soft)">
+  <section id="skills">
     <div class="wrap">
       <div class="eyebrow">Toolbox</div>
       <h2 class="section-title reveal">Skills & tools</h2>
-      <p class="section-sub reveal">Software I build with, and the methods I use to design and manage systems.</p>
+      <p class="section-sub reveal">Software I build with, and the methods I use to design, model and manage systems.</p>
       <div class="skills-grid">
         <div class="skill-card card reveal">
-          <h3><span class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><polyline points="16 18 22 12 16 6"/><polyline points="8 6 2 12 8 18"/></svg></span> Software & programming</h3>
+          <h3><span class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><polyline points="16 18 22 12 16 6"/><polyline points="8 6 2 12 8 18"/></svg></span> Programming</h3>
           <div class="chips">
-            <span class="chip">Java</span><span class="chip">Python</span><span class="chip">JavaScript</span>
-            <span class="chip">HTML / CSS</span><span class="chip">SQL</span><span class="chip">Git</span>
-            <span class="chip">SAP</span><span class="chip">MATLAB</span><span class="chip">AnyLogic</span>
-            <span class="chip">AutoCAD</span><span class="chip">CNC</span><span class="chip">PLC</span>
-            <span class="chip">MS Office (Word, Excel, PPT, Project)</span>
+            <span class="chip">C / C++</span><span class="chip">Python</span><span class="chip">Agentic AI & LLMs</span>
+            <span class="chip">Java / C#</span><span class="chip">JavaScript / HTML / CSS</span>
+            <span class="chip">SQL / PostgreSQL</span><span class="chip">GIS / PostGIS</span>
+            <span class="chip">Git</span><span class="chip">SAP</span>
           </div>
         </div>
         <div class="skill-card card reveal">
-          <h3><span class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><circle cx="12" cy="12" r="3"/><path d="M19.4 15a1.65 1.65 0 0 0 .33 1.82l.06.06a2 2 0 1 1-2.83 2.83l-.06-.06a1.65 1.65 0 0 0-1.82-.33 1.65 1.65 0 0 0-1 1.51V21a2 2 0 0 1-4 0v-.09A1.65 1.65 0 0 0 9 19.4a1.65 1.65 0 0 0-1.82.33l-.06.06a2 2 0 1 1-2.83-2.83l.06-.06A1.65 1.65 0 0 0 4.68 15a1.65 1.65 0 0 0-1.51-1H3a2 2 0 0 1 0-4h.09A1.65 1.65 0 0 0 4.6 9a1.65 1.65 0 0 0-.33-1.82l-.06-.06a2 2 0 1 1 2.83-2.83l.06.06A1.65 1.65 0 0 0 9 4.6a1.65 1.65 0 0 0 1-1.51V3a2 2 0 0 1 4 0v.09a1.65 1.65 0 0 0 1 1.51 1.65 1.65 0 0 0 1.82-.33l.06-.06a2 2 0 1 1 2.83 2.83l-.06.06A1.65 1.65 0 0 0 19.4 9c.13.36.36.67.66.92.31.25.68.4 1.08.43H21a2 2 0 0 1 0 4h-.09a1.65 1.65 0 0 0-1.51 1Z"/></svg></span> Methods & systems engineering</h3>
+          <h3><span class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><rect x="3" y="3" width="7" height="7"/><rect x="14" y="3" width="7" height="7"/><rect x="14" y="14" width="7" height="7"/><rect x="3" y="14" width="7" height="7"/></svg></span> Tools & methods</h3>
           <div class="chips">
-            <span class="chip">UML</span><span class="chip">SysML</span><span class="chip">BPMN</span>
-            <span class="chip">Systems design & modeling</span><span class="chip">ERP</span><span class="chip">MRP</span>
-            <span class="chip">IDEF</span><span class="chip">ISO standards</span><span class="chip">Project management</span>
-            <span class="chip">Performance management</span><span class="chip">Operations management</span>
-            <span class="chip">Continuous improvement</span><span class="chip">Risk assessment</span>
+            <span class="chip">MATLAB</span><span class="chip">AnyLogic</span><span class="chip">Modelica</span>
+            <span class="chip">Unity</span><span class="chip">Unreal</span><span class="chip">Omniverse</span>
+            <span class="chip">CAD / Revit / 3ds Max</span><span class="chip">CNC</span>
+            <span class="chip">PLC / SCADA</span><span class="chip">Process automation</span>
           </div>
         </div>
-      </div>
-
-      <div style="margin-top:22px;">
-        <div class="cert-grid" style="grid-template-columns:1fr;">
+        <div class="skill-card card reveal">
+          <h3><span class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><circle cx="12" cy="12" r="3"/><path d="M19.4 15a1.65 1.65 0 0 0 .33 1.82l.06.06a2 2 0 1 1-2.83 2.83l-.06-.06a1.65 1.65 0 0 0-1.82-.33 1.65 1.65 0 0 0-1 1.51V21a2 2 0 0 1-4 0v-.09A1.65 1.65 0 0 0 9 19.4a1.65 1.65 0 0 0-1.82.33l-.06.06a2 2 0 1 1-2.83-2.83l.06-.06A1.65 1.65 0 0 0 4.68 15a1.65 1.65 0 0 0-1.51-1H3a2 2 0 0 1 0-4h.09A1.65 1.65 0 0 0 4.6 9a1.65 1.65 0 0 0-.33-1.82l-.06-.06a2 2 0 1 1 2.83-2.83l.06.06A1.65 1.65 0 0 0 9 4.6a1.65 1.65 0 0 0 1-1.51V3a2 2 0 0 1 4 0v.09a1.65 1.65 0 0 0 1 1.51 1.65 1.65 0 0 0 1.82-.33l.06-.06a2 2 0 1 1 2.83 2.83l-.06.06A1.65 1.65 0 0 0 19.4 9c.13.36.36.67.66.92.31.25.68.4 1.08.43H21a2 2 0 0 1 0 4h-.09a1.65 1.65 0 0 0-1.51 1Z"/></svg></span> Systems modeling</h3>
+          <div class="chips">
+            <span class="chip">System design</span><span class="chip">MBSE</span><span class="chip">UML</span>
+            <span class="chip">SysML</span><span class="chip">BPMN</span><span class="chip">IDEF</span>
+            <span class="chip">UAF</span><span class="chip">Ontology / RDF / OWL / Turtle</span>
+            <span class="chip">IFC / BIM / CIM / GIS</span>
+          </div>
+        </div>
+        <div class="skill-card card reveal">
+          <h3><span class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M3 3v18h18"/><path d="M7 15l4-6 4 4 5-8"/></svg></span> Modeling & simulation</h3>
+          <div class="chips">
+            <span class="chip">System Dynamics</span><span class="chip">Agent-Based</span>
+            <span class="chip">Discrete-Event</span><span class="chip">Continuous</span>
+            <span class="chip">CFD / FEM</span><span class="chip">Monte Carlo</span>
+          </div>
+        </div>
+        <div class="skill-card card reveal">
+          <h3><span class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="m9 12 2 2 4-4"/><circle cx="12" cy="12" r="10"/></svg></span> Management</h3>
+          <div class="chips">
+            <span class="chip">Project management</span><span class="chip">Operations management</span>
+            <span class="chip">Risk assessment</span><span class="chip">ISO standards</span>
+            <span class="chip">ERP / MRP</span><span class="chip">Performance & continuous improvement (PCI)</span>
+          </div>
         </div>
       </div>
 
       <h3 style="margin-top:48px; margin-bottom:20px; font-size:18px;" class="reveal">Certifications</h3>
       <div class="cert-grid">
         <div class="cert-card card reveal">
-          <div class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M12 2 2 7l10 5 10-5-10-5Z"/><path d="M2 17l10 5 10-5M2 12l10 5 10-5"/></svg></div>
-          <div><b>DELF</b><span>France</span></div>
-        </div>
-        <div class="cert-card card reveal">
           <div class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="m9 12 2 2 4-4"/><circle cx="12" cy="12" r="10"/></svg></div>
-          <div><b>PMP — Project Management</b><span>USA</span></div>
+          <div><b>PMP</b><span>Project Management Institute (USA) · 2021</span></div>
+        </div>
+        <div class="cert-card card reveal">
+          <div class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M12 2 2 7l10 5 10-5-10-5Z"/><path d="M2 17l10 5 10-5M2 12l10 5 10-5"/></svg></div>
+          <div><b>DELF</b><span>France Éducation International · 2023</span></div>
+        </div>
+        <div class="cert-card card reveal">
+          <div class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M12 2 2 7l10 5 10-5-10-5Z"/><path d="M2 17l10 5 10-5M2 12l10 5 10-5"/></svg></div>
+          <div><b>IELTS</b><span>United Kingdom · 2019</span></div>
         </div>
         <div class="cert-card card reveal">
           <div class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10Z"/></svg></div>
-          <div><b>ISO 18001:2007 (OHSAS)</b><span>United Kingdom</span></div>
+          <div><b>OHSAS 18001:2007</b><span>United Kingdom · 2017</span></div>
         </div>
         <div class="cert-card card reveal">
           <div class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10Z"/></svg></div>
-          <div><b>IOSH — Managing Safely</b><span>United Kingdom</span></div>
+          <div><b>IOSH — Safety Management</b><span>United Kingdom · 2017</span></div>
         </div>
         <div class="cert-card card reveal">
           <div class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M10.29 3.86 1.82 18a2 2 0 0 0 1.71 3h16.94a2 2 0 0 0 1.71-3L13.71 3.86a2 2 0 0 0-3.42 0Z"/><path d="M12 9v4M12 17h.01"/></svg></div>
-          <div><b>HABC — Risk Assessment</b><span>United Kingdom</span></div>
+          <div><b>HABC — Risk Assessment</b><span>United Kingdom · 2018</span></div>
         </div>
         <div class="cert-card card reveal">
           <div class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M8.5 14.5A2.5 2.5 0 0 0 11 12c0-1.38-.5-2-1-3-1.072-2.143-.224-4.054 2-6 .5 2.5 2 4.9 4 6.5 2 1.6 3 3.5 3 5.5a7 7 0 1 1-14 0c0-1.153.433-2.294 1-3a2.5 2.5 0 0 0 2.5 2.5Z"/></svg></div>
-          <div><b>HABC — Fire Safety</b><span>United Kingdom</span></div>
+          <div><b>HABC — Fire Safety</b><span>United Kingdom · 2017</span></div>
+        </div>
+        <div class="cert-card card reveal">
+          <div class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><circle cx="12" cy="12" r="10"/><path d="M12 8v4l3 3"/></svg></div>
+          <div><b>OSH — 30 Hours</b><span>United Kingdom · 2017</span></div>
         </div>
       </div>
     </div>
   </section>
 
   <!-- PUBLICATIONS -->
-  <section id="publications">
+  <section id="publications" style="background:var(--bg-soft)">
     <div class="wrap">
       <div class="eyebrow">Research output</div>
       <h2 class="section-title reveal">Publications</h2>
-      <p class="section-sub reveal">Journal papers, conference papers and book chapters from my Ph.D. research on urban digital twins.</p>
+      <p class="section-sub reveal">Journal papers, international & national conferences, book chapters and a Ph.D. thesis from my research on urban digital twins.</p>
 
       <div class="pub-stats">
-        <div class="pub-stat card reveal"><b>10</b><span>Total publications</span></div>
-        <div class="pub-stat card reveal"><b>3</b><span>Journal papers</span></div>
-        <div class="pub-stat card reveal"><b>5</b><span>Conference / congress</span></div>
+        <div class="pub-stat card reveal"><b>13</b><span>Total</span></div>
+        <div class="pub-stat card reveal"><b>4</b><span>Journal papers</span></div>
+        <div class="pub-stat card reveal"><b>3</b><span>Int'l conferences</span></div>
+        <div class="pub-stat card reveal"><b>3</b><span>National conferences</span></div>
         <div class="pub-stat card reveal"><b>2</b><span>Book chapters</span></div>
       </div>
 
       <div class="filter-row">
-        <button class="filter-btn active" data-filter="all">All (10)</button>
-        <button class="filter-btn" data-filter="journal">Journal (3)</button>
-        <button class="filter-btn" data-filter="conference">Conference (3)</button>
-        <button class="filter-btn" data-filter="congress">Congress (2)</button>
+        <button class="filter-btn active" data-filter="all">All (13)</button>
+        <button class="filter-btn" data-filter="journal">Journal (4)</button>
+        <button class="filter-btn" data-filter="intl">Int'l conference (3)</button>
+        <button class="filter-btn" data-filter="national">National conference (3)</button>
         <button class="filter-btn" data-filter="book">Book chapter (2)</button>
+        <button class="filter-btn" data-filter="thesis">Thesis (1)</button>
       </div>
 
       <div class="pub-list" id="pubList">
@@ -686,119 +877,155 @@
           <div class="pub-num">1</div>
           <div class="pub-body">
             <div class="pub-top">
-              <div class="pub-title">From modeling and simulation to Digital Twin: evolution or revolution?</div>
+              <div class="pub-title">From modeling and simulation to digital twin: evolution or revolution?</div>
               <span class="badge badge-published">Published · 2024</span>
             </div>
-            <div class="pub-meta">Ali, Z., Biglari, R., Denil, J., Mertens, J., Poursoltan, M. &amp; Traoré, M.K.</div>
-            <div class="pub-venue">SIMULATION — SAGE Publications &amp; The Society for Modeling and Simulation International (SCS)</div>
+            <div class="pub-meta">Ali, Z., Biglari, R., Denil, J., Mertens, J., Poursoltan, M. & Traoré, M.K.</div>
+            <div class="pub-venue">Simulation, 100(7), pp.751-769 — SAGE Publications (DOI: 10.1177/00375497241234680)</div>
           </div>
         </div>
 
-        <div class="pub-card card" data-type="congress">
+        <div class="pub-card card" data-type="journal">
           <div class="pub-num">2</div>
           <div class="pub-body">
             <div class="pub-top">
-              <div class="pub-title">Building Urban Digital Twin: An overview</div>
-              <span class="badge badge-presented">Presented · 2024</span>
+              <div class="pub-title">A holistic approach to multi-scale and multi-perspective urban digital twin development</div>
+              <span class="badge badge-published">Published · 2026</span>
             </div>
-            <div class="pub-meta">Ali, Z. &amp; Traoré, M.K.</div>
-            <div class="pub-venue">SAGIP — Lyon, France (29–31 May 2024)</div>
+            <div class="pub-meta">Ali, Z. & Traoré, M.K.</div>
+            <div class="pub-venue">Computers, Environment and Urban Systems, 127, p.102432 — Elsevier (DOI: 10.1016/j.compenvurbsys.2026.102432)</div>
           </div>
         </div>
 
-        <div class="pub-card card" data-type="congress">
+        <div class="pub-card card" data-type="journal">
           <div class="pub-num">3</div>
           <div class="pub-body">
             <div class="pub-top">
-              <div class="pub-title">University of Bordeaux Urban Digital Twin: UBUDT</div>
-              <span class="badge badge-presented">Presented · 2025</span>
+              <div class="pub-title">A Generic Architecture and its Object-Oriented Implementation for Digital Twins</div>
+              <span class="badge badge-review">Major revision</span>
             </div>
-            <div class="pub-meta">Ali, Z. &amp; Traoré, M.K.</div>
-            <div class="pub-venue">SAGIP — Mulhouse, France (21–23 May 2025)</div>
+            <div class="pub-meta">Ali, Z., Zahediyami, M., Delos, V. & Traoré, M.K.</div>
+            <div class="pub-venue">Software and Systems Modeling — Springer (revised version submitted after major revision)</div>
           </div>
         </div>
 
-        <div class="pub-card card" data-type="conference">
+        <div class="pub-card card" data-type="journal">
           <div class="pub-num">4</div>
-          <div class="pub-body">
-            <div class="pub-top">
-              <div class="pub-title">DMFDT: Data Management Framework for Digital Twin</div>
-              <span class="badge badge-published">Published · 2024</span>
-            </div>
-            <div class="pub-meta">Ali, Z., Poursoltan, M. &amp; Traoré, M.K.</div>
-            <div class="pub-venue">PRO-VE — 25th Working Conference on Virtual Enterprises, Albi, France · Springer Nature Switzerland, pp. 130–144</div>
-          </div>
-        </div>
-
-        <div class="pub-card card" data-type="conference">
-          <div class="pub-num">5</div>
-          <div class="pub-body">
-            <div class="pub-top">
-              <div class="pub-title">Developing Urban Digital Twin For Mobility</div>
-              <span class="badge badge-published">Published · 2025</span>
-            </div>
-            <div class="pub-meta">Ali, Z., Diakité, M. &amp; Traoré, M.K.</div>
-            <div class="pub-venue">Annual Modeling and Simulation Conference (ANNSIM), Madrid, Spain · IEEE, pp. 1–13</div>
-          </div>
-        </div>
-
-        <div class="pub-card card" data-type="conference">
-          <div class="pub-num">6</div>
-          <div class="pub-body">
-            <div class="pub-top">
-              <div class="pub-title">Urban Digital Twin Engineering: A Multi-Perspective and Holistic Approach</div>
-              <span class="badge badge-accepted">Accepted · 2025</span>
-            </div>
-            <div class="pub-meta">Ali, Z. &amp; Traoré, M.K.</div>
-            <div class="pub-venue">Computers and Industrial Engineering (CIE-52), Lyon, France</div>
-          </div>
-        </div>
-
-        <div class="pub-card card" data-type="book">
-          <div class="pub-num">7</div>
-          <div class="pub-body">
-            <div class="pub-top">
-              <div class="pub-title">Human-Centered Digital Twin: Concepts, Methods and Technologies</div>
-              <span class="badge badge-accepted">Accepted</span>
-            </div>
-            <div class="pub-meta">Traoré, M.K., Poursoltan, M., Zahediyami, M. &amp; Ali, Z.</div>
-            <div class="pub-venue">In <em>Advanced Architectures and Techniques for Smart Industry</em> — Springer</div>
-          </div>
-        </div>
-
-        <div class="pub-card card" data-type="book">
-          <div class="pub-num">8</div>
-          <div class="pub-body">
-            <div class="pub-top">
-              <div class="pub-title">Immersive and Cognitive Urban Digital Twins for Sustainable and Resilient Smart Territories</div>
-              <span class="badge badge-accepted">Accepted</span>
-            </div>
-            <div class="pub-meta">Traoré, M.K., Diakité, M. &amp; Ali, Z.</div>
-            <div class="pub-venue">Wiley Publishers</div>
-          </div>
-        </div>
-
-        <div class="pub-card card" data-type="journal">
-          <div class="pub-num">9</div>
-          <div class="pub-body">
-            <div class="pub-top">
-              <div class="pub-title">A holistic approach to multi-scale and multi-perspective urban digital twin development</div>
-              <span class="badge badge-published">Published</span>
-            </div>
-            <div class="pub-meta">Ali, Z. &amp; Traoré, M.K.</div>
-            <div class="pub-venue">Computers, Environment and Urban Systems (CEUS) — Elsevier</div>
-          </div>
-        </div>
-
-        <div class="pub-card card" data-type="journal">
-          <div class="pub-num">10</div>
           <div class="pub-body">
             <div class="pub-top">
               <div class="pub-title">A Hybrid Data and Model-Driven Approach to Mobility Urban Digital Twin</div>
               <span class="badge badge-review">Under review</span>
             </div>
-            <div class="pub-meta">Ali, Z. &amp; Traoré, M.K.</div>
-            <div class="pub-venue">Information and Software Technology (IST) — Elsevier</div>
+            <div class="pub-meta">Ali, Z. & Traoré, M.K.</div>
+            <div class="pub-venue">Information and Software Technology (IST) — Elsevier (submitted)</div>
+          </div>
+        </div>
+
+        <div class="pub-card card" data-type="book">
+          <div class="pub-num">5</div>
+          <div class="pub-body">
+            <div class="pub-top">
+              <div class="pub-title">Human-Centred Digital Twin: Concepts, Methods, and Technologies</div>
+              <span class="badge badge-published">Published · 2026</span>
+            </div>
+            <div class="pub-meta">Traoré, M.K., Poursoltan, M., Zahediyami, M. & Ali, Z.</div>
+            <div class="pub-venue">In <em>Advanced Architectures and Techniques for Smart Industry</em>, pp. 41-61 — Springer Nature Singapore (DOI: 10.1007/978-981-95-5271-9_3)</div>
+          </div>
+        </div>
+
+        <div class="pub-card card" data-type="book">
+          <div class="pub-num">6</div>
+          <div class="pub-body">
+            <div class="pub-top">
+              <div class="pub-title">Immersive and cognitive urban digital twins for sustainable and resilient smart territories</div>
+              <span class="badge badge-published">Published · 2026</span>
+            </div>
+            <div class="pub-meta">Traoré, M.K., Diakité, M. & Ali, Z.</div>
+            <div class="pub-venue">Resilient Complex Adaptive Systems, pp. 425-440 — Wiley (DOI: 10.1002/9781394326303.ch15)</div>
+          </div>
+        </div>
+
+        <div class="pub-card card" data-type="intl">
+          <div class="pub-num">7</div>
+          <div class="pub-body">
+            <div class="pub-top">
+              <div class="pub-title">DMFDT: Data Management Framework for Digital Twin</div>
+              <span class="badge badge-published">Published · 2024</span>
+            </div>
+            <div class="pub-meta">Ali, Z., Poursoltan, M. & Traoré, M.K.</div>
+            <div class="pub-venue">Working Conference on Virtual Enterprises, pp. 130-144 — Springer Nature Switzerland (DOI: 10.1007/978-3-031-71743-7_9)</div>
+          </div>
+        </div>
+
+        <div class="pub-card card" data-type="intl">
+          <div class="pub-num">8</div>
+          <div class="pub-body">
+            <div class="pub-top">
+              <div class="pub-title">Developing Urban Digital Twin for Mobility</div>
+              <span class="badge badge-published">Published · 2025</span>
+            </div>
+            <div class="pub-meta">Ali, Z., Diakité, M. & Traoré, M.K.</div>
+            <div class="pub-venue">2025 Annual Modeling and Simulation Conference (ANNSIM), pp. 1-13 — IEEE (DOI: 10.22360/ANNSIM.2025.CPS+DT.63)</div>
+          </div>
+        </div>
+
+        <div class="pub-card card" data-type="intl">
+          <div class="pub-num">9</div>
+          <div class="pub-body">
+            <div class="pub-top">
+              <div class="pub-title">Urban Digital Twin Engineering: A Multi-Perspective and Holistic Approach</div>
+              <span class="badge badge-published">Published · 2025</span>
+            </div>
+            <div class="pub-meta">Ali, Z. & Traoré, M.K.</div>
+            <div class="pub-venue">Proceedings of the International Conference on Computers and Industrial Engineering (CIE), pp. 102-111 (ISBN: 9798331332204)</div>
+          </div>
+        </div>
+
+        <div class="pub-card card" data-type="national">
+          <div class="pub-num">10</div>
+          <div class="pub-body">
+            <div class="pub-top">
+              <div class="pub-title">Building Urban Digital Twin: An Overview</div>
+              <span class="badge badge-presented">Presented · 2024</span>
+            </div>
+            <div class="pub-meta">Ali, Z. & Traoré, M.K.</div>
+            <div class="pub-venue">SAGIP — Lyon, France</div>
+          </div>
+        </div>
+
+        <div class="pub-card card" data-type="national">
+          <div class="pub-num">11</div>
+          <div class="pub-body">
+            <div class="pub-top">
+              <div class="pub-title">University of Bordeaux Urban Digital Twin: UBUDT</div>
+              <span class="badge badge-presented">Presented · 2025</span>
+            </div>
+            <div class="pub-meta">Ali, Z. & Traoré, M.K.</div>
+            <div class="pub-venue">SAGIP — Mulhouse, France</div>
+          </div>
+        </div>
+
+        <div class="pub-card card" data-type="national">
+          <div class="pub-num">12</div>
+          <div class="pub-body">
+            <div class="pub-top">
+              <div class="pub-title">Engineering Towards Scalable Urban Digital Twins: A Platform-Centric Methodology and Insights</div>
+              <span class="badge badge-presented">Presented · 2026</span>
+            </div>
+            <div class="pub-meta">Ali, Z. & Traoré, M.K.</div>
+            <div class="pub-venue">SAGIP — Bordeaux, France</div>
+          </div>
+        </div>
+
+        <div class="pub-card card" data-type="thesis">
+          <div class="pub-num">13</div>
+          <div class="pub-body">
+            <div class="pub-top">
+              <div class="pub-title">Systems Engineering Approach to the Development of Urban Digital Twin</div>
+              <span class="badge badge-published">Ph.D. Thesis · 2025</span>
+            </div>
+            <div class="pub-meta">Ali, Z.</div>
+            <div class="pub-venue">Doctoral dissertation, Université de Bordeaux (DOI: 10.70675/4f2b1d56zf662z4b41za04bz698dbd255c8f)</div>
           </div>
         </div>
 
@@ -806,22 +1033,142 @@
     </div>
   </section>
 
+  <!-- WORKSHOPS / SEMINARS -->
+  <section id="workshops">
+    <div class="wrap">
+      <div class="eyebrow">Outreach</div>
+      <h2 class="section-title reveal">Workshops, seminars & talks</h2>
+      <p class="section-sub reveal">Invited presentations and workshop participation beyond peer-reviewed publications.</p>
+      <div class="ws-list">
+        <div class="ws-card card reveal">
+          <div class="ws-date">14 Feb 2024</div>
+          <div><div class="ws-title">Poster presentation</div><div class="ws-venue">Doctoral School of Physical and Engineering Sciences (SPI) Day — University of Bordeaux, France</div></div>
+        </div>
+        <div class="ws-card card reveal">
+          <div class="ws-date">20 Nov 2025</div>
+          <div><div class="ws-title">"Digital Twin and Systems Engineering"</div><div class="ws-venue">SAGIP Technical Committee meeting — Paris, France</div></div>
+        </div>
+        <div class="ws-card card reveal">
+          <div class="ws-date">12–13 Jan 2026</div>
+          <div><div class="ws-title">"Urban Digital Twin Engineering"</div><div class="ws-venue">DITRISC — Jumeaux Numériques pour la gestion des risques et des crises, PEPR Risques & MITI-CNRS Project — Paris, France</div></div>
+        </div>
+        <div class="ws-card card reveal">
+          <div class="ws-date">27–29 Jan 2026</div>
+          <div><div class="ws-title">"Data Management for Urban Digital Twins"</div><div class="ws-venue">1st Annual School of the ENLIGHT-DISRUPT Project — University of the Basque Country, Bilbao, Spain</div></div>
+        </div>
+        <div class="ws-card card reveal">
+          <div class="ws-date">25 Sept 2026</div>
+          <div><div class="ws-title">"Mission Resilience: Become the Digital Brain of Your City"</div><div class="ws-venue">Invited member (University of Groningen) · LEGO Serious Play citizen-science activity, ENLIGHT-DISRUPT Project — Eureka Science Event, Groningen, Netherlands</div></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- SOCIETIES / FUNDING -->
+  <section id="network" style="background:var(--bg-soft)">
+    <div class="wrap">
+      <div class="eyebrow">Networks</div>
+      <h2 class="section-title reveal">Societies, networks & funded projects</h2>
+      <p class="section-sub reveal">Memberships, committees and funding that support the research.</p>
+
+      <div class="fund-list">
+        <div class="fund-card card reveal">
+          <div class="fund-head">
+            <div><div class="fund-role">ENLIGHT Project</div><div class="fund-org">Europe</div></div>
+            <div class="fund-date">2025 — Present</div>
+          </div>
+          <div class="fund-desc">Member of ENLIGHT – ECR (Early Career Researcher), and ENLIGHT – DISRUPT, a network in the emerging field of urban digital twins and their application to evidence-based urban management, resilient territories and sustainable development.</div>
+        </div>
+        <div class="fund-card card reveal">
+          <div class="fund-head">
+            <div><div class="fund-role">Horizon Europe Project</div><div class="fund-org">Europe</div></div>
+            <div class="fund-date">2026 — Ongoing</div>
+          </div>
+          <div class="fund-desc">Partnered in drafting and submitting a Horizon Europe research project proposal (€6M funding). Project title: <em>Distributed Agentic Intelligence for Multi-Risk Disaster Management.</em></div>
+        </div>
+        <div class="fund-card card reveal">
+          <div class="fund-head">
+            <div><div class="fund-role">SAGIP 2026</div><div class="fund-org">Bordeaux, France</div></div>
+            <div class="fund-date">June 2026</div>
+          </div>
+          <div class="fund-desc">Member of the Organizing Committee — managed logistics services for the organization of SAGIP 2026 in Bordeaux.</div>
+        </div>
+        <div class="fund-card card reveal">
+          <div class="fund-head">
+            <div><div class="fund-role">ACT Project — National Research Agency (ANR)</div><div class="fund-org">France</div></div>
+            <div class="fund-date">2022 — 2025</div>
+          </div>
+          <div class="fund-desc">Awarded a fully funded Ph.D. under the ACT project of the ANR (ANR-20-IDES-0001), and a postdoctoral position under the same project.</div>
+        </div>
+      </div>
+
+      <h3 style="margin-top:44px; margin-bottom:18px; font-size:16px;" class="reveal">Collaborations & partner institutions</h3>
+      <div class="chips reveal">
+        <span class="chip">University of Göttingen, Germany</span>
+        <span class="chip">University of Applied Sciences Krems (IMC), Austria</span>
+        <span class="chip">University of Essex, UK</span>
+        <span class="chip">University of Sydney, Australia</span>
+        <span class="chip">University of Oxford, UK</span>
+        <span class="chip">FloodWaive, Germany</span>
+        <span class="chip">Bordeaux Métropole, France</span>
+        <span class="chip">Helmholtz Centre for Environmental Research (UFZ), Germany</span>
+        <span class="chip">Vodafone Foundation, UK</span>
+        <span class="chip">European Emergency Number Association (EENA), Belgium</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- REFERENCES -->
+  <section id="references">
+    <div class="wrap">
+      <div class="eyebrow">Recommendations</div>
+      <h2 class="section-title reveal">References</h2>
+      <p class="section-sub reveal">Happy to connect referees directly — contact details available on request.</p>
+      <div class="ref-grid">
+        <div class="ref-card card reveal">
+          <div class="avatar">MT</div>
+          <h4>Mamadou Kaba Traoré</h4>
+          <div class="role">Full Professor</div>
+          <div class="org">University of Bordeaux</div>
+        </div>
+        <div class="ref-card card reveal">
+          <div class="avatar">MP</div>
+          <h4>Milad Poursoltan</h4>
+          <div class="role">Research Engineer</div>
+          <div class="org">Expleo</div>
+        </div>
+        <div class="ref-card card reveal">
+          <div class="avatar">AM</div>
+          <h4>Aamir Mehmood</h4>
+          <div class="role">CEO</div>
+          <div class="org">AA'LA Solutions</div>
+        </div>
+      </div>
+      <p class="ref-note">Google Scholar: <a href="https://scholar.google.com/citations?hl=fr&user=7LGEp1sAAAAJ" target="_blank" rel="noopener" style="color:var(--primary); font-weight:600;">profile</a> · ORCID: <a href="https://orcid.org/0009-0008-8101-9016" target="_blank" rel="noopener" style="color:var(--primary); font-weight:600;">0009-0008-8101-9016</a> · LinkedIn: <a href="https://www.linkedin.com/in/zeeshanali0001" target="_blank" rel="noopener" style="color:var(--primary); font-weight:600;">zeeshanali0001</a></p>
+    </div>
+  </section>
+
   <!-- CONTACT -->
-  <section id="contact">
+  <section id="contact" style="background:var(--bg-soft)">
     <div class="wrap">
       <div class="contact-card reveal">
         <h2>Let's build something together</h2>
         <p>Whether it's a research collaboration, a digital twin project, or just a question about my work — I'd love to hear from you.</p>
         <div class="contact-actions">
-          <a href="mailto:zeeshan.ub@gmail.com" class="btn btn-primary">
+          <a href="mailto:zeeshanali0001@gmail.com" class="btn btn-primary">
             <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="m2 7 10 6 10-6"/></svg>
-            zeeshan.ub@gmail.com
+            zeeshanali0001@gmail.com
           </a>
           <a href="https://github.com/zeeshanali0001" target="_blank" rel="noopener" class="btn btn-ghost">GitHub Profile</a>
+          <a href="https://www.linkedin.com/in/zeeshanali0001" target="_blank" rel="noopener" class="btn btn-ghost">LinkedIn</a>
         </div>
         <div class="contact-links">
           <a href="tel:+33668365944"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.127.96.362 1.903.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.907.338 1.85.573 2.81.7A2 2 0 0 1 22 16.92Z"/></svg> +33 (0)6 68 36 59 44</a>
-          <a href="#about"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M12 21s-7-5.33-7-11a7 7 0 0 1 14 0c0 5.67-7 11-7 11Z"/><circle cx="12" cy="10" r="2.5"/></svg> Bordeaux, France</a>
+          <a href="#about"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M12 21s-7-5.33-7-11a7 7 0 0 1 14 0c0 5.67-7 11-7 11Z"/><circle cx="12" cy="10" r="2.5"/></svg> Pessac, Bordeaux, France</a>
+        </div>
+        <div class="contact-emails">
+          <span>zeeshan.ali@u-bordeaux.fr</span>
+          <span>zeeshan.ali@ims-bordeaux.fr</span>
         </div>
       </div>
     </div>
@@ -830,7 +1177,7 @@
 </main>
 
 <footer>
-  <div class="wrap">© <span id="year"></span> Zeeshan Ali. Built with care, hosted on GitHub Pages.</div>
+  <div class="wrap">© <span id="year"></span> Zeeshan ALI (PhD, PMP). Built with care, hosted on GitHub Pages.</div>
 </footer>
 
 <button id="backTop" aria-label="Back to top">
